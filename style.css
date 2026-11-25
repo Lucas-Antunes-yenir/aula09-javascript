@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #20362e;
+    background: #f4f3eb;
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    width: min(100% - 2rem, 54rem);
+    margin: 2rem auto 4rem;
+}
+
+header {
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    color: white;
+    background: #163e32;
+    border-bottom: 0.5rem solid #bed66c;
+    border-radius: 1.2rem;
+}
+
+header p {
+    margin: 0 0 1rem;
+    color: #d8ed99;
+    font: bold 0.95rem Consolas, monospace;
+}
+
+h1 {
+    max-width: 19ch;
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.7rem);
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+}
+
+section {
+    margin-top: 1.25rem;
+    padding: clamp(1.1rem, 4vw, 2rem);
+    background: #fffefa;
+    border: 1px solid #d9dfd2;
+    border-radius: 1rem;
+}
+
+h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.2rem, 3vw, 1.65rem);
+    line-height: 1.25;
+}
+
+ol {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+li + li {
+    margin-top: 0.65rem;
+}
+
+li::marker {
+    color: #456347;
+    font-weight: bold;
+}
+
+code {
+    padding: 0.1rem 0.3rem;
+    background: #edf2e4;
+    border-radius: 0.25rem;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    color: #203e30;
+    background: #eff4e9;
+    border: 1px solid #b8c9b1;
+    border-radius: 0.55rem;
+    font: inherit;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+li button {
+    width: 100%;
+}
+
+button:hover {
+    background: #dcebcf;
+}
+
+button:focus-visible {
+    outline: 3px solid #176393;
+    outline-offset: 3px;
+}
