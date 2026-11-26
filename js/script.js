@@ -8,7 +8,11 @@ function microPassos() {
     console.log(`${nome} tem ${idade} anos e mora em ${cidade}.`);
     idade = 17;
     console.log(`${nome} tem ${idade} anos e mora em ${cidade}.`);
-    cidade = "Porto Alegre"; // Erro proposital ao trocar uma const.
+    try {
+        cidade = "Porto Alegre";
+    } catch (erro) {
+        console.log(`${erro.name}: cidade foi declarada com const e continua valendo "${cidade}".`);
+    }
 }
 
 // Nível 2 — Adivinhe o resultado
